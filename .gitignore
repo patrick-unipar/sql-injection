@@ -1,0 +1,8 @@
+# Versão antiga (Node + React + SQLite), mantida só no computador do professor
+versao-node/
+
+# Dependências e temporários
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

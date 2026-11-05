@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQLi Lab - Laboratório Didático</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topo">
+        <div>
+          <h1>SQLi Lab</h1>
+          <span class="sub">Laboratório didático de SQL Injection, em ambiente controlado</span>
+        </div>
+        <nav>
+          <button data-aba="dashboard">Dashboard</button>
+          <button data-aba="aulas">Aulas Interativas</button>
+          <button data-aba="central">Central de Aprendizado</button>
+        </nav>
+      </header>
+
+      <main>
+        <noscript><p class="alerta">Ative o JavaScript do navegador para usar o laboratório.</p></noscript>
+      </main>
+
+      <footer>
+        Uso exclusivamente educacional. Dados fictícios. As consultas são executadas de forma
+        parametrizada (segura); a versão "insegura" é apenas ilustrativa.
+      </footer>
+    </div>
+
+    <!-- Ordem importa: primeiro o banco e o conteúdo, depois o motor e a interface. -->
+    <script src="dados/banco.js"></script>
+    <script src="js/conteudo-aulas.js"></script>
+    <script src="js/conteudo-leigo.js"></script>
+    <script src="js/conteudo-central.js"></script>
+    <script src="js/motor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
